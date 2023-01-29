@@ -1,0 +1,12 @@
+{% extends 'Admin/base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	{{ include("Admin/partials/titre.html.twig", {'titre':'Home'} ) }}
+	<br>
+	<h1>BONJOUR Admin
+	</h1>
+	<a href="{{ path('app_logout') }}">Deconnecter</a>
+{% endblock %}
